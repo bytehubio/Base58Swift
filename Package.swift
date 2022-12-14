@@ -20,8 +20,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Base58Swift",
-            dependencies: ["BigInt"]),
+            dependencies: ["BigInt"],
+            path: "Sources"),
         .testTarget(
             name: "Base58SwiftTests",
-            dependencies: ["Base58Swift"]),
+            dependencies: ["Base58Swift"],
+            path: "Tests"),
     ])
