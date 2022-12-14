@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "BigInt", url: "https://github.com/attaswift/BigInt.git", from: "5.3.0")
+        .package(url: "https://github.com/attaswift/BigInt.git", from: "5.3.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -24,5 +24,4 @@ let package = Package(
         .testTarget(
             name: "Base58SwiftTests",
             dependencies: ["Base58Swift"]),
-    ]
-)
+    ])
